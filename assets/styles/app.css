@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --bg: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    --bolder: 900;
+    --semi-bold: 700;
+    --color: #F9F9F9;
+    --greeen: #628E75;
+    --gradient-default: #628E75;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:var(--bg) no-repeat ;
+    min-height: 100vh;
+}
+
+header {
+    padding: 4rem 10%;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar .socials {
+    display: flex;
+    gap: 2rem;
+}
+
+main {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 1rem 10%;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-area {
+    flex: 1;
+}
+
+.left-area .content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.left-area .content h2 {
+    font-weight: var(--semi-bold);
+    font-size: 2rem;
+    color: var(--color);
+}
+
+.left-area .content h1 {
+    margin: 0;
+    font-weight: var(--bolder);
+    font-size: 3.5rem;
+    color: var(--color);
+}
+
+.left-area .content p {
+    font-size: 1.1rem;
+    color: var(--color);
+    line-height: 34px;
+}
+
+.left-area .button-area {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.left-button {
+    display: flex;
+    align-items: center;
+}
+
+.left-area .button-area .btn {
+    color: var(--color);
+    border: 2px solid var(--greeen);
+    text-align: center;
+    line-height: 40px;
+    background: transparent;
+    margin-top: .6rem;
+    padding:0 .4rem 0 .4rem;
+    text-transform: uppercase;
+}
+
+.left-area .button-area .btn.active {
+    background-color: var(--greeen);
+}
+
+.right-area {
+    flex: 1;
+}
+
+.right-area img {
+    max-width: 100%;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1030px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .box-container {
+        flex-direction: column;
+    }
+    .right-area {
+        flex: none;
+        order: -1;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    header {
+        padding: 2rem;
+    }
+    .left-area .content {
+        gap: .3rem;
+    }
+    .left-area .content h1 {
+        font-size: 3rem;
+    }
+    .left-area .content p {
+        line-height: 16px;
+    }
+    
+    .left-area .button-area .btn {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}
