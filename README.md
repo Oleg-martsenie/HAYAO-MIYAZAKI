@@ -10,7 +10,7 @@
 ## Result
 
 <p>Desktop ( 🖥️ ) Version</p>
-<img src="./assets/img/desktop-v" />
+<img src="./assets/img/desktop-v.jpg" />
 
 <p>Mobile ( 📱 ) Version</p>
 <img src="./assets/img/mobile-v.jpg" />
